@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Services - Lesotho Tourism</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <header>
+    <h1>Lesotho Tourism</h1>
+    <p>The Kingdom in the Sky </p>
+</header>
+
+<nav>
+    <a href="home.html">Home</a>
+    <a href="destination.html">Destinations</a>
+     <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <button id="modeBtn" onclick="changeMode()">Dark Mode</button>
+
+</nav>
+
+<section class="hero">
+    <h1>Our Services / Products</h1>
+    <p>Explore, experience and enjoy the best of Lesotho.</p>
+</section>
+
+<h2 style="text-align:center;">Our Tourism Services</h2>
+
+<section class="container">
+
+    <div class="card">
+    <img src="maluti.webp" alt="Maloti Mountains">
+
+
+    <div class="card-content">
+        <h3>Guided Tours</h3>
+        <p>Explore beautiful attractions with local guides.</p>
+        <button onclick="showInfo('Guided Tours')">Learn More</button>
+    </div>
+
+</div>
+
+<div class="card">
+    <img src="lodges.webp" alt="Traditional accommodation">
+    <div class="card-content">
+        <h3>Accommodation</h3>
+        <p>Discover comfortable lodges and guesthouses.</p>
+        <button onclick="showInfo('Accommodation')">Learn More</button>
+    </div>
+
+
+</div>
+
+
+<div class="card">
+    <div class="card-content">
+        <img src="act.webp" width="300px" >
+        <h3>Adventure Activities</h3>
+        <p>Enjoy hiking, horse riding and waterfall visits.</p>
+        <button onclick="showInfo('Adventure Activities')">Learn More</button>
+    </div>
+
+
+</div>
+
+<div class="card">
+    <img src="culture.webp" alt="Basotho culture">
+    <div class="card-content">
+        <h3>Cultural Experiences</h3>
+        <p>Discover Basotho traditions, food and heritage.</p>
+        <button onclick="showInfo('Cultural Experiences')">Learn More</button>
+    </div>
+
+
+</div>
+
+<div class="card">
+    <img src="trans.webp" alt="Tourist transport">
+    <div class="card-content">
+        <h3>Transport Services</h3>
+        <p>Learn about transport options for exploring Lesotho.</p>
+        <button onclick="showInfo('Transport Services')">Learn More</button>
+    </div>
+
+
+</div>
+
+<div class="card">
+    <img src="crafts.webp" alt="Basotho crafts">
+    <div class="card-content">
+        <h3>Souvenirs & Local Products</h3>
+        <p>Discover Basotho crafts, blankets and traditional hats.</p>
+        <button onclick="showInfo('Souvenirs and Local Products')">Learn More</button>
+    </div>
+
+
+</div>
+
+</section>
+
+<footer>
+    <p>&copy; 2026 Lesotho Tourism | Explore. Discover. Enjoy.</p>
+</footer>
+
+<script>
+    function changeMode() {
+    document.body.classList.toggle("dark-mode");
+
+    const button = document.getElementById("modeBtn");
+
+    if (document.body.classList.contains("dark-mode")) {
+        button.textContent = "Light Mode";
+    } else {
+        button.textContent = "Dark Mode";
+    }
+}
+
+document.getElementById("search").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        searchPlaces();
+    }
+});
+    
+    
+</script>
+
+</body>
+</html>

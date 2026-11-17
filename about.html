@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>About Us - Lesotho Tourism</title>
+     <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <header>
+    <h1>Lesotho Tourism</h1>
+    <p>The Kingdom in the Sky </p>
+</header>
+
+<nav>
+    <a href="home.html">Home</a>
+    <a href="destination.html">Destinations</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <button id="modeBtn" onclick="changeMode()">Dark Mode</button>
+</nav>
+
+<section class="hero">
+    <h1>About Us</h1>
+    <p>Discover the beauty, culture and heritage of Lesotho.</p>
+</section>
+
+<section class="about">
+
+    <div class="about-text">
+    <h2>Welcome to Lesotho Tourism</h2>
+
+    <p>
+        Lesotho Tourism is a website dedicated to showcasing
+        the beautiful attractions, rich culture and natural
+        wonders of the Mountain Kingdom.
+    </p>
+
+    <p>
+        From the Maloti Mountains to Thaba Bosiu and
+        Maletsunyane Falls, we help visitors discover
+        amazing places in Lesotho.
+    </p>
+</div>
+
+<img src="lesotho.jpg" alt="Beautiful Maloti Mountains">
+
+</section>
+
+<section class="mission">
+    <h2>Our Mission</h2>
+    <p>
+        To promote tourism in Lesotho by sharing information
+        about its attractions, culture and natural beauty.
+    </p>
+</section>
+
+
+<section class="mission">
+    <h2>Our Vision</h2>
+    <p>
+        To make Lesotho a popular tourist destination
+        for visitors from around the world.
+    </p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Lesotho Tourism | Explore. Discover. Enjoy.</p>
+</footer>
+
+<script>
+
+    function changeMode() {
+    document.body.classList.toggle("dark-mode");
+
+    let button = document.getElementById("modeBtn");
+
+    if (document.body.classList.contains("dark-mode")) {
+        button.innerHTML = " Light Mode";
+    } else {
+        button.innerHTML = " Dark Mode";
+    }
+}
+    
+
+
+</script>
+
+</body>
+
+</html>

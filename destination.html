@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesotho Tourism - Destinations</title>
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+
+<body>
+    
+
+    <header>
+        <h1>Explore Lesotho</h1>
+        <p>Discover the Beauty of the Mountain Kingdom</p>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <button id="modeBtn" onclick="changeMode()">Dark Mode</button>
+    </nav>
+
+    <section class="destinations">
+        <center>
+        <h2>Our Top Destinations</h2>
+        <p>Discover the amazing landscapes, history and culture of Lesotho.</p>
+    </center>
+
+        <div class="destination-container">
+
+        
+            <div class="destination-card">
+                <img src="male.webp" alt="Maletsunyane Falls">
+                <h3>Maletsunyane Falls</h3>
+                <p>
+                    Experience the beauty of one of Lesotho's most
+                    spectacular waterfalls in Semonkong.
+                </p>
+                <a href="https://en.wikipedia.org/wiki/Maletsunyane_Falls"
+                   target="_blank">Explore More</a>
+            </div>
+
+            
+            <div class="destination-card">
+                <img src="bosiu.webp" alt="Thaba Bosiu">
+                <h3>Thaba Bosiu</h3>
+                <p>
+                    Discover the historic mountain fortress associated
+                    with King Moshoeshoe I and the founding of the Basotho nation.
+                </p>
+                <a href="https://en.wikipedia.org/wiki/Thaba_Bosiu"
+                   target="_blank">Explore More</a>
+            </div>
+
+        
+            <div class="destination-card">
+                <img src="maluti.webp" alt="Maluti Mountains">
+                <h3>Maluti Mountains</h3>
+                <p>
+                    Enjoy breathtaking mountain scenery, fresh air
+                    and unforgettable adventures in the highlands of Lesotho.
+                </p>
+                <a href="https://en.wikipedia.org/wiki/Drakensberg"
+                   target="_blank">Explore More</a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Lesotho Tourism. Discover the Mountain Kingdom.</p>
+    </footer>
+
+    <script>
+
+         function changeMode() {
+    document.body.classList.toggle("dark-mode");
+
+    const button = document.getElementById("modeBtn");
+
+    if (document.body.classList.contains("dark-mode")) {
+        button.textContent = "Light Mode";
+    } else {
+        button.textContent = "Dark Mode";
+    }
+}
+
+document.getElementById("search").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        searchPlaces();
+    }
+});
+    
+
+        
+
+
+    </script        
+
+</body>
+</html>
